@@ -6,7 +6,7 @@ router.get('/', function (req, res, next) {
 });
 
 router.get('/message/:msg', function (req, res, next) {
-    res.render('node',{message: req.params.msg});
+    res.render('node', {message: req.params.msg});
 });
 
 router.post('/message', function(req, res, next) {
