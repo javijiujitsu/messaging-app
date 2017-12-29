@@ -11,7 +11,7 @@ router.get('/message/:msg', function (req, res, next) {
 
 router.post('/message', function(req, res, next) {
   var message = req.body.message;
-  res.redirect('/message' + message);
+  res.redirect('/message/' + message);
 });
 
 module.exports = router;
